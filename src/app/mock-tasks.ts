@@ -16,7 +16,7 @@ export const TASKS: Task[] = [
   {
     id: 3,
     text: 'Food Shopping',
-    day: 'May 7th at 2:30p',
+    day: 'May 7th at 2:30pm',
     reminder: true
   }
 ]
