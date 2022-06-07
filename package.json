@@ -6,16 +6,15 @@
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "heroku-postbuild": "ng build --prod",
     "test": "ng test",
     "server": "json-server --watch db.json --port 5000"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
-    "@angular/cli": "~13.3.6",
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
-    "@angular/compiler-cli": "~13.3.0",
     "@angular/core": "~13.3.0",
     "@angular/forms": "~13.3.0",
     "@angular/platform-browser": "~13.3.0",
@@ -26,12 +25,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.1.0",
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
-    "express": "^4.18.1",
     "json-server": "^0.17.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "typescript": "~4.6.2",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@angular/cli": "~13.3.6",
+    "@angular/compiler-cli": "~13.3.0",
+    "typescript": "~4.6.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.6",
@@ -46,5 +46,10 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.6.2"
+  },
+
+  "engines": {
+    "npm": "8.10.0",
+    "node": "16.15.0"
   }
 }
