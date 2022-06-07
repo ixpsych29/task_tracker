@@ -15,7 +15,7 @@ const httpOptions = {
 })
 export class TaskService {
 
-  private apiUrl = 'http://localhost:5000/tasks';
+  private apiUrl = 'https://json-file-db.herokuapp.com/tasks';
 
   constructor(private http: HttpClient) { }
 
