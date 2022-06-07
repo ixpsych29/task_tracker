@@ -1,34 +1,10 @@
 {
   "tasks": [
     {
-      "id?": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id?": 2,
-      "text": "Physician Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id?": 3,
-      "text": "Library Visit",
-      "day": "May 5th at 2:30pm",
-      "reminder": false
-    },
-    {
-      "id?": 4,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id?": 5,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 2:30pm",
-      "reminder": false
+      "text": "Meeting with Mujtaba Bhai",
+      "day": "Today at 11 pm sharp",
+      "reminder": true,
+      "id": 1
     }
   ]
 }

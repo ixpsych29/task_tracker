@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,13 @@ import { TasksComponent } from './MyComponents/tasks/tasks.component';
 import { TaskItemComponent } from './MyComponents/task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTaskComponent } from './MyComponents/add-task/add-task.component';
+import { AboutComponent } from './MyComponents/about/about.component';
+import { FooterComponent } from './MyComponents/footer/footer.component';
+
+const appRouts: Routes = [
+  {path: '', component: TasksComponent },
+  {path: 'about', component: AboutComponent },
+]
 
 @NgModule({
   declarations: [
@@ -19,7 +27,9 @@ import { AddTaskComponent } from './MyComponents/add-task/add-task.component';
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +37,7 @@ import { AddTaskComponent } from './MyComponents/add-task/add-task.component';
     FontAwesomeModule,
     HttpClientModule,
     FormsModule,
+    RouterModule.forRoot(appRouts, {enableTracing: true}),
     ReactiveFormsModule
   ],
   providers: [],
